@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/GALEStyle.css">
+    <title>Galería con Bootstrap</title>
+</head>
+
+<body>
+      <!--CODIGO DE LA NAVBAR-->
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxs-rocket icon'></i>          
+      <div class="logo_name">Space</div>      
+      <i class='bx bx-menu' id="btn"></i>      
+    </div>
+    <ul class="nav-list">          
+      <li>
+        <a href="../index.html">
+          <i class='bx bxs-home'></i>
+          <span class="links_name">Inicio</span>
+        </a>
+        <span class="tooltip">Inicio</span>
+      </li>
+      <li>
+       <a href="GalePage.html">
+        <i class='bx bxs-image-alt'></i>
+        <span class="links_name">Galería</span>
+      </a>
+      <span class="tooltip">Galería</span>
+    </li>
+    <li>
+     <a href="noticias.html">
+      <i class='bx bxs-news' ></i>
+      <span class="links_name">Noticias</span>
+    </a>
+    <span class="tooltip">Noticias</span>
+    <ul class="nav-list">
+    </ul>
+  </li>     
+</ul>
+</div>
+<!--Galeria y Lightbox-->
+    <section id="galeria" class="container">
+        <div class="text-center pt-5">
+<h1>Galeria</h1>
+<p>Hola</p>
+        </div>
+        <div class="row">
+<div class="col-lg-4 col-md-6 col-md-12"><img src="../img/img1.jpg" ></div>
+<div class="col-lg-4 col-md-6 col-md-12"><img src="../img/img2.jpg" ></div>
+<div class="col-lg-4 col-md-6 col-md-12"><img src="../img/img3.jpg" ></div>
+<div class="col-lg-4 col-md-6 col-md-12"><img src="../img/img4.jpg" ></div>
+<div class="col-lg-4 col-md-6 col-md-12"><img src="../img/img5.jpg" ></div>
+<div class="col-lg-4 col-md-6 col-md-12"><img src="../img/img6.jpg" ></div>
+        </div>
+    </section>
+    <section id="contenedor-principal">
+        <div id="contenedor-interno">
+            <img id="img-activa" src="../img/img1.jpg"></div>
+            <button id="btn-cierra" type="button">x</button>
+            <button id="btn-retrocede" type="button">&lt;</button>
+            <button id="btn-adelanta" type="button">&gt;</button>
+        </div>
+    </section>
+        <!-- Optional JavaScript; choose one of the two! -->
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+            <script src="../js/GaleScript.js"></script>
+            <script src="../js/navbar.js"></script>
+</body>
+
+</html>               
