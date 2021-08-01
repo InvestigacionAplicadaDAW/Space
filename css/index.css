@@ -1,0 +1,294 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CÓDIGO BARRA DE NAVEGACIÓN */
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 110px;
+    background: #162b4e;
+    padding: 6px 14px;
+    z-index: 99;
+    transition: all 0.5s ease;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+.sidebar.open{
+  width: 250px;
+}
+.sidebar .logo-details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.sidebar .logo-details .icon{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo_name{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name{
+  opacity: 1;
+}
+.sidebar .logo-details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sidebar.open .logo-details #btn{
+  text-align: right;
+}
+.sidebar i{
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.sidebar .nav-list{
+  margin-top: 20px;
+  height: 100%;
+}
+.sidebar li{
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+.sidebar li a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #162b4e;
+}
+.sidebar li a:hover{
+  background: #FFF;
+}
+.sidebar li a .links_name{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidebar.open li a .links_name{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i{
+  transition: all 0.5s ease;
+  color: #11101D;
+}
+.sidebar li i{
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+.sidebar li img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.home-section{
+  position: relative;
+  background: #fff;
+  min-height: 100vh;
+  top: 0;
+  left: 110px;
+  width: calc(100% - 110px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidebar.open ~ .home-section{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+.home-section .text{
+  display: inline-block;
+  color: #11101d;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px
+}
+@media (max-width: 420px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+}
+
+/*CUERPO DE LA PÁGINA*/
+section{
+    background: linear-gradient(#162b4e,#7597de);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section .img{
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    pointer-events: none;
+}
+section .img#moon{
+    mix-blend-mode: screen;
+}
+section .img#stars{
+    height: 100%;
+    object-fit: cover;
+}
+section .img#mountains_behind{
+    bottom: 0;
+    top: initial; 
+}
+section .img#mountains_front{
+    bottom: 0;
+    top: initial; 
+}
+#text{
+    position: absolute;
+    color: white;
+    font-size: 8vw;
+    font-weight: 200;
+    z-index: 10000;
+}
+#boton{
+    position: absolute;
+    top: 50%; 
+    left: 50%;  
+    transform: translate(-50%,-50%);
+    margin-top: 110px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 50px; 
+    background: white;
+    border-radius: 40px;
+    font-size: 1.4em;
+    color: #2b1055; 
+    z-index: 10000;
+}
+
+/*SECCION DE CARTAS*/
+
+#cartas{
+    margin-left: 10%; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#cartas .card{
+    margin-top: 10%;
+}
+#cartas .card, .card2, .card3{
+    display: inline-block;
+    margin-left: 10%;
+}
+.RELEVANCIA{
+  margin-left: 35%;
+  margin-top: 5%;
+}
+.RELEVANCIA:hover{
+  color: #7597de; 
+ }
+.UNM{
+  margin-left: 41%;
+  margin-bottom: 5%;
+}
+.UNM:hover{
+ color: #7597de; 
+}
+#universo{
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+    background: black; 
+}
+.Texto{
+    position: absolute; 
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 600%; 
+    color: white; 
+    font-weight: 700;
+}
+.banner{
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex; 
+    flex-wrap: wrap;
+}
+.banner .blocks{
+    position: relative; 
+    display: block; 
+    width: 5%;
+    height: 5%;
+    animation: animate 6s ease-in-out forwards; 
+}
+.banner .blocks:nth-child(even){
+  animation: animate 6s ease-in-out forwards;
+}
+.banner .blocks:nth-child(7n+3){
+  animation: animate 8.5s ease-in-out forwards;
+}
+.banner .blocks:nth-child(7n+7){
+  animation: animate 7.5s ease-in-out forwards;
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: scale(0) translateY(1000px);
+  }
+  50%{
+    opacity: 1;
+    background: url('../img/universo.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+    background: url('../img/universo.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
