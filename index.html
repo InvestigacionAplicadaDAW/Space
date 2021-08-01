@@ -4,9 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+<title>Space</title>
 </head>
 <body>
-    
+    <!-- Barra de navegación -->
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class='bx bxs-rocket icon'></i>          
+        <div class="logo_name">Space</div>      
+        <i class='bx bx-menu' id="btn"></i>      
+      </div>
+      <ul class="nav-list">          
+        <li>
+          <a href="../index.html">
+            <i class='bx bxs-home'></i>
+            <span class="links_name">Inicio</span>
+          </a>
+          <span class="tooltip">Inicio</span>
+        </li>
+        <li>
+         <a href="#">
+          <i class='bx bxs-image-alt'></i>
+          <span class="links_name">Galería</span>
+        </a>
+        <span class="tooltip">Galería</span>
+      </li>
+      <li>
+       <a href="noticias.html">
+        <i class='bx bxs-news' ></i>
+        <span class="links_name">Noticias</span>
+      </a>
+      <span class="tooltip">Noticias</span>
+      <ul class="nav-list">
+      </ul>
+    </li>     
+  </ul>
+  </div>
+  
+  <!-- Inicio -->
+  <section>
+    <img class="img" src="stars.png" id="stars">
+    <img class="img" src="img/moon.png" id="moon">
+    <img class="img" src="img/mountains_behind.png" id="mountains_behind">
+    <h2 id="text">BIENVENIDOS</h2>
+    <a href="#cartas" id="boton">Exploremos</a>
+    <img class="img" src="img/mountains_front.png" id="mountains_front">
+  </section>
+  <div id="cartas">
+    <h1 class="RELEVANCIA" >NOTAS RELEVANTES</h1>
+    <div class="card" style="width: 18rem;">
+      <img src="img/triangulo.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Triángulo de las Bermudas del espacio</h5>
+        <p class="card-text">La "Anomalía del Atlántico Sur", es uno de los fenómenos más extraños experimentado por algunos astronautas.</p>
+        <a href="https://www.bbc.com/mundo/noticias-57891454" class="btn" style="background:#162b4e; color: white;">Saber más...</a>
+      </div>
+    </div>  
+    <div id ="card2" class="card" style="width: 18rem;">
+      <img src="img/visitante.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Visitantes del espacio</h5>
+        <p class="card-text">En mitad de una pandemia mundial de COVID-19 y una crisis económica, parece mentira que haya gente apasionada por la paradoja de Fermi.</p>
+        <a href="https://elpais.com/opinion/2021-07-29/visitantes-del-espacio-exterior.html" class="btn " style="background:#162b4e; color: white;">Explora más adentro</a>
+      </div>
+    </div>  
+    <div id="card3" class="card" style="width: 18rem;">
+      <img src="img/nasa.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">NASA</h5>
+        <p class="card-text">¡Entra! Hay nuevas noticias sobre el universo que nos rodea.</p>
+        <a href="https://www.nasa.gov/" class="btn " style="background:#162b4e; color: white;">¡Vamos!</a>
+      </div>
+    </div>  
+  </div>
+  <!-- JAVASCRIPT -->
+  <h1 class="UNM" >UN NUEVO MUNDO</h1>
+  <section id="universo">
+    <h2 class="Texto">UNIVERSO</h2>
+    <div class="banner">
+      <div class="blocks"></div>
+    </div>
+
+  </section>
+  <!-- VINCULOS -->
+    <script src="js/navbar.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
 </html>
